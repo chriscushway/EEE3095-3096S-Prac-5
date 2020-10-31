@@ -25,8 +25,8 @@ sample_rate = 5 #set sampling rate to 5 as default
 
 def setup_GPIO():
     #setup button
-    GPIO.setup(25, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
-    GPIO.add_event_detect(25, GPIO.RISING, callback=toggle_sample_rate, bouncetime=200)
+    GPIO.setup(24, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+    GPIO.add_event_detect(24, GPIO.RISING, callback=toggle_sample_rate, bouncetime=200)
 
 # toggle sampling rates which can either be 1,5 or 10
 def toggle_sample_rate(channel):
